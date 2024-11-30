@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pacific Trails Resort - Activities</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="pacific.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Pacific Trails Resort</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="yurts.html">Yurts</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                </ul>
+            </nav><main>
+                <h2>The Yurts at Pacific Trails</h2>
+                <div id="trailhero"></div>
+                <h3>Hiking</h3>
+                <p>Pacific Trails Resort has 5 miles of hiking trails and is adjacent to a state park. Go it alone or join one of our guided hikes.</p>
+
+                <h3>Kayaking</h3>
+                <p>Ocean Kayaks are available for guest use.</p>
+
+                <h3>Bird Watching</h3>
+                <p>While anytime is a good time for bird watching at Pacific Trails. We offer guided bird watching trips at sunrise several times a week.</p>
+                <h3>Images</h3>
+                <div id="grid">
+                    <div id="thumbnails">
+                        <img src="images/photo1.jpg" width="200" height="150" alt="Image 0" onclick="replaceImage(this)">
+                        <img src="images/photo2.jpg" width="200" height="150" alt="Image 1" onclick="replaceImage(this)">
+                        <img src="images/photo3.jpg" width="200" height="150" alt="Image 2" onclick="replaceImage(this)">
+                        <img src="images/photo4.jpg" width="200" height="150" alt="Image 3" onclick="replaceImage(this)">
+                    </div>
+                        <img id="bigimage" src="images/photo1.jpg" width="400" height="300" alt="">
+                </div>
+
+                <script>
+                    function replaceImage(clickedImage) {
+                        var big = document.getElementById("bigimage");
+                        big.src = clickedImage.src;
+                    }
+                </script>
+            </main>
+            <footer>
+                Copyright &copy; 2012 Pacific Trails Resort
+                <p><a href="mailto:youremail@my.centennialcollege.ca"></a></p>
+            </footer>
+        </div>
+    </body>
+</html>
